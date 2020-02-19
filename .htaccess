@@ -1,0 +1,38 @@
+RewriteEngine on
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+
+
+RewriteRule ^home?$ index.php [L,QSA]
+RewriteRule ^hospital?$ hospital.php [L,QSA]
+RewriteRule ^servicos?$ servicos.php [L,QSA]
+RewriteRule ^bercario?$ bercario.php [L,QSA]
+RewriteRule ^noticias?$ noticias.php [L,QSA]
+RewriteRule ^comunicacao?$ comunicacao.php [L,QSA]
+RewriteRule ^licitacoes?$ licitacoes.php [L,QSA]
+RewriteRule ^ouvidoria?$ ouvidoria.php [L,QSA]
+RewriteRule ^projeto?$ projeto.php [L,QSA]
+RewriteRule ^contato?$ contato.php [L,QSA]
+RewriteRule ^diretoria?$ diretoria.php [L,QSA]
+RewriteRule ^administracao?$ administracao.php [L,QSA]
+RewriteRule ^missao-visao-valores?$ missao-visao-valores.php [L,QSA]
+RewriteRule ^estatuto?$ estatuto.php [L,QSA]
+RewriteRule ^estrutura?$ estrutura.php [L,QSA]
+RewriteRule ^horarios?$ horarios.php [L,QSA]
+RewriteRule ^especialidades?$ especialidades.php [L,QSA]
+RewriteRule ^subservicos?$ subservicos.php [L,QSA]
+RewriteRule ^estrutura-hospital?$ estrutura-hospital.php [L,QSA]
+RewriteRule ^doacoes?$ doacoes.php [L,QSA]
+RewriteRule ^fomento-2018?$ fomento2018.php [L,QSA]
+RewriteRule ^fomento-2019?$ fomento2019.php [L,QSA]
+RewriteRule ^recursos-humanos?$ recursoshumanos.php [L,QSA]
+
+RewriteRule ^documentos-probatorios?$ documentos-probatorios.php [L,QSA]
+RewriteRule ^termo-plantao?$ termo-plantao.php [L,QSA]
+RewriteRule ^termo-quimioterapia?$ termo-quimioterapia.php [L,QSA]
+
+RewriteRule ^servicos/(.*)?$ servicos.php?id_busca=$1 [L,QSA]
+RewriteRule ^noticias/(.*)?$ noticias.php?id_busca=$1 [L,QSA]
+

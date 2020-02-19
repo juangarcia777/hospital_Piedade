@@ -1,0 +1,67 @@
+@charset "iso-8859-1";
+/* CSS Document */
+*{margin:0; padding:0;}
+html{margin:0; padding:0; width:100%; height:100%;}
+body{margin:0; padding:0; width:100%; height:100%; font:11px/14px Arial, Helvetica, sans-serif; background-image:url(../interface/fundo.jpg); background-position: top center; background-repeat:no-repeat; background-color:#FFF }
+img{border:0;}
+a{text-decoration:none}
+textarea:focus, input:focus{outline: none;}
+
+
+
+#opniao{width:23px; height:117px; background-image:url(../interface/opniao.png); background-repeat:no-repeat; background-position:top right; position:fixed; right:0; top:120px} 
+
+
+#logar{width:497px; height:323px;  background-image:url(../interface/arr.png);  position:absolute; left:50%; top:50%; margin:-161px 0 0 -248px; z-index:1; }
+
+
+#imp{width:258px; height:28px; background-image:url(../interface/imput.png); background-repeat:no-repeat;}
+#leao_logo{width:100%; height:46px; position:absolute; bottom:0; background-image:url(../interface/fd.png); line-height:46px;  }
+#leao_logo3{width:200px; height:48px; position:fixed; bottom:0; right:0; margin-right:10px; background-image:url(../interface/leao_logo.png); background-position:top right; background-repeat:no-repeat; line-height:46px; margin-bottom:10px  }
+#leao_logo2{width:100%; height:46px; position:absolute; top:0; background-image:url(../interface/fd.png); line-height:46px;  }
+
+
+#conteudo{width:880px; height:auto; display:table; min-height:300px; margin:auto auto;}
+
+
+#mask{width:100%; height:100%; background-color:#000; position:absolute; display:none; z-index:99999999999999999999;}
+#lala{width:400px; height:300px; position:absolute; left:50%; top:50%; margin:-150px 0 0 -200px; background-color:#FFF; z-index:9999999999999999999999999999999999; 
+border:4px double #03C; display:none}
+
+#carregando{width:200px; height:100px; position:absolute; left:50%; top:50%; margin:-50px 0 0 -100px; background-color:#FFF; z-index:9999999999999999999999999999999999; display:none}
+
+#ok{width:400px; height:100px; position:absolute; left:50%; top:50%; margin:-50px 0 0 -200px; background-color:#FFF; z-index:9999999999999999999999999999999999; display:none}
+
+
+
+
+
+#menu{width:987px; height:41px; background-image:url(../interface/menu.png); background-repeat:no-repeat; margin:auto auto; margin-top:70px;}
+
+#p1{width:880px; height:17px; background-image:url(../interface/p1.png); background-repeat:no-repeat; margin:auto auto; margin-top:18px}
+#meio{width:850px; height:auto; display:table; min-height:300px; margin:auto auto; background-color:#FFF; padding:15px}
+#p2{width:880px; height:18px; background-image:url(../interface/p2.png); margin:auto auto; background-repeat:no-repeat; margin-bottom:30px}
+
+
+span.adm{font-size:14px}
+span.titu{font-size:14px; color: #09C}
+span.tex{font-size:12px;}
+
+span.tex2{font-size:13px; color: #09C}
+span.obs{font-size:11px; color:#900}
+
+span.men{color:#039; font-size:14px}
+a.men{color:#039; text-decoration:none; font-size:14px}
+a.men:hover{text-decoration:underline}
+
+a.ex:hover{text-decoration:none; color:#039}
+a.ex:hover{text-decoration:underline}
+
+
+input[type="text"]:focus{border:2px solid #009}
+input[type="text"].grande{width:100%; height:21px; background-color:#EDECFD; color:#333}
+input[type="text"].medio{width:420px; height:21px; background-color:#EDECFD; color:#333}
+select.medio{width:420px; height:25px; background-color:#EDECFD; color:#333; border:0;}
+
+.gra{width:820px; height:23px; background-color:#EDECFD; color:#333}
+.grau{width:840px; height:100px; background-color:#EDECFD; color:#333}

@@ -1,0 +1,43 @@
+.conteudo {
+	display: flex;
+}
+.berc2 {
+	width: 1090px;
+	display: flex;
+}
+.foto_berc {
+	width: 500px;
+}
+.pai_noti {
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    padding-top: 20px;
+    height: 200px;
+    margin-top: 30px;
+}
+
+.foto_berc {
+    padding-left: 250px;
+}
+p {
+    padding-top: 15px;
+}
+label {
+    font-weight: bold;
+    color: cadetblue;
+}
+
+.foto_berc {
+    margin-right: 25px;
+}
+.content_meio a {
+    margin-top: 40px;
+    background-color: cornflowerblue;
+    width: 200px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    padding-bottom: 8px;
+    padding-top: 5px;
+}

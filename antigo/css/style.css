@@ -1,0 +1,63 @@
+@charset "iso-8859-1";
+/* CSS Document */
+*{margin:0; padding:0;}
+html{margin:0; padding:0; width:100%; height:100%; }
+body{margin:0; padding:0; width:100%; height:100%; font:11px/14px Arial, Helvetica, sans-serif; background-image:url(../interface/fundo.png); background-position:top left; background-repeat:repeat-x }
+img{border:0;}
+a{text-decoration:none}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+#top{width:100%; height:6px; background-color:#EFBE57}
+
+#geral{width:100%; height:100%; background-image:url(../interface/faixa.png); background-position:top center; background-repeat:no-repeat;  }
+
+#topo{width:995px; height:146px; margin:auto auto; }
+
+#logo{width:244px; height:99px; background-image:url(../interface/logo.png); float:left; margin-top:29px}  
+
+#menu{width:995px; height:112px; float:left; margin-top:-45px;  }
+
+#arruma_meio{width:100%; height:auto; display:table; float:left;}
+#conteudo{width:995px; height:auto; min-height:500px; display:table; margin:auto auto; background-color:#FFF; }
+#meio_conteudo{width:983px; height:auto; min-height:300px; display:table; float:left; margin-left:12px;margin-top:15px; padding-bottom:23px}
+
+#banners{width:995px; height:300px;float:left}
+
+#barra{width:1088px; height:86px; background-image:url(../interface/la.png); background-repeat:no-repeat; position:absolute; z-index:9999; margin-left:-47px; margin-top:240px}
+
+#arrumis{width:995px; height:58px; background-image:url(../interface/pq.png); position:absolute; margin-top:242px; z-index:99999999}
+
+a.menu{color:#0669BA; font-size:12px; font-weight:bold}
+a.menu:hover{text-decoration:underline}
+
+a.nex{color:#A0C0DD; font-size:14px; font-weight:bold}
+a.nex:hover{text-decoration:underline}
+
+a.df{color:#666; font-size:13px; }
+a.df:hover{text-decoration:underline}
+
+
+a.bb{color:#A0C0DD; font-size:18px; }
+a.bb:hover{text-decoration:underline}
+span.bb{color:#A0C0DD; font-size:13px; }
+span.bb2{color:#A0C0DD; font:14px/19px Arial, Helvetica, sans-serif; }
+
+span.bb3{color:#A0C0DD; font:15px/17px Arial, Helvetica, sans-serif; }
+span.bb4{color:#666; font:12px/17px Arial, Helvetica, sans-serif; }
+
+
+a.var2{color:#666666; font:12px/17px Arial, Helvetica, sans-serif;}
+a.var2:hover{text-decoration:underline}
+
+#p1{width:680px; height:auto; min-height:200px; display:table; float:left; margin-top:22px}
+#p2{width:249px; height:749px; float:left; background-image:url(../interface/q.png); background-repeat:no-repeat; margin-left:52px; }
+
+
+#rodape{width:100%; height:206px; background-color:#005DA8; float:left; margin-top:40px}
+#meio_rodape{width:995px; height:206px; margin:auto auto;}
+
+
+span.uiyre{color:#A0C0DD; font-size:13px; }
