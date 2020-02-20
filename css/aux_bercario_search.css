@@ -1,5 +1,6 @@
 .conteudo {
 	display: flex;
+    padding-bottom: 200px;
 }
 .berc2 {
 	width: 1090px;
@@ -31,7 +32,7 @@ label {
 .foto_berc {
     margin-right: 25px;
 }
-.content_meio a {
+#msg  {
     margin-top: 40px;
     background-color: cornflowerblue;
     width: 200px;
@@ -40,4 +41,256 @@ label {
     color: white;
     padding-bottom: 8px;
     padding-top: 5px;
+    font-weight: 800;
+}
+#imprimir{
+    margin-top: 20px;
+    background-color: cornflowerblue;
+    width: 200px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    padding-bottom: 8px;
+    padding-top: 5px;
+    font-weight: 800;
+}
+#semPai label {
+    padding-top: 30px;
+}
+.mensagem {
+    display: none;
+    padding-left: 11%;
+
+}
+form {
+    width: 450px;
+    padding: 20px;
+}
+
+input[type="text"] {
+    width: 100%;
+    border-radius: 5px;
+}
+form label {
+    color: white;
+    font-size: 15px;
+}
+
+form {
+    border-radius: 20px;
+}
+.recados {
+    margin-left: 10%;
+
+}
+
+.col {
+    background-color: gainsboro;
+    width: 500px;
+    padding: 25px;
+    border-radius: 30px;
+}
+
+strong {
+    font-size: 15px;
+}
+
+p{
+    font-size: 12px;
+}
+.col {
+    margin-bottom: 20px;
+}
+input[type="submit"] {
+    width: 150px;
+    background-color: beige;
+    font-weight: 600;
+}
+textarea {
+    width: 100%;
+}
+
+
+
+@media print {
+
+.conteudo {
+    display: none;
+    padding-bottom: 200px;
+}
+.berc2 {
+    width: 1090px;
+    display: flex;
+}
+.foto_berc {
+    width: 500px;
+}
+.pai_noti {
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    padding-top: 20px;
+    height: 200px;
+    margin-top: 30px;
+}
+
+.foto_berc {
+    padding-left: 250px;
+}
+p {
+    padding-top: 15px;
+}
+label {
+    font-weight: bold;
+    color: cadetblue;
+}
+
+.foto_berc {
+    margin-right: 25px;
+}
+#msg  {
+    margin-top: 40px;
+    background-color: cornflowerblue;
+    width: 200px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    padding-bottom: 8px;
+    padding-top: 5px;
+    font-weight: 800;
+}
+#imprimir{
+    margin-top: 20px;
+    background-color: cornflowerblue;
+    width: 200px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    padding-bottom: 8px;
+    padding-top: 5px;
+    font-weight: 800;
+}
+#semPai label {
+    padding-top: 30px;
+}
+.mensagem {
+    display: none;
+    padding-left: 11%;
+
+}
+form {
+    width: 450px;
+    padding: 20px;
+}
+
+input[type="text"] {
+    width: 100%;
+    border-radius: 5px;
+}
+form label {
+    color: white;
+    font-size: 15px;
+}
+
+form {
+    border-radius: 20px;
+}
+.recados {
+    margin-left: 10%;
+
+}
+
+.col {
+    background-color: gainsboro;
+    width: 500px;
+    padding: 25px;
+    border-radius: 30px;
+}
+
+strong {
+    font-size: 15px;
+}
+
+p{
+    font-size: 12px;
+}
+.col {
+    margin-bottom: 20px;
+}
+input[type="submit"] {
+    width: 150px;
+    background-color: beige;
+    font-weight: 600;
+}
+textarea {
+    width: 100%;
+}
+
+}
+
+@media screen and (max-width:400px) {
+    .foto_berc {
+    padding-left: 5px;
+    /* margin-left: 20px; */
+}
+
+.foto_berc {}
+
+.berc2 {
+    flex-direction: column;
+}
+
+.foto_berc {
+    /* width: 320px; */
+}
+
+.pai_noti {
+    width: 295px;
+}
+
+.titulos2 {
+    display: none;
+}
+
+.line2 {display: none;}
+
+div {
+    width: 320px;
+}
+
+a#imprimir {
+    display: none;
+}
+
+.col {
+    width: 280px;
+}
+
+.col {
+    padding-right: 20px;
+}
+
+form {
+    margin-top: 50px;
+    width: 304px;
+}
+
+.conteudo {
+    display: none;
+}
+
+.berc2 {
+    width: 350px;
+}
+.foto_berc {
+    width: 300px;
+    padding-right: 165px;
+}
+.recados {
+    margin-left: 3%;
+}
+.mensagem {
+    padding-left: 4%;
+    width: 100%;
+}
 }

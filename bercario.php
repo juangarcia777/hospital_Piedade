@@ -10,10 +10,10 @@ ul.bok li.active a{color:#FFF}
 <div class="content_meio">
     	
     <div class="tp_interna">
-    	CONHE«A NOSSOS REC…M NASCIDOS
+    	CONHE√áA NOSSOS REC√âM NASCIDOS
     </div>	   
     
-    <div class="titulos2">BER«¡RIO</div>
+    <div class="titulos2">BER√á√ÅRIO</div>
 
     <div class="ajusta_line2"><div class="line2"></div></div><br><br>
 
@@ -22,7 +22,7 @@ ul.bok li.active a{color:#FFF}
 			<div class="input-group">
 				<form method="POST" action="busca_rn.php">
 					<button type="submit" id="basic-addon3" style="font-size:15px">BUSCAR</button>
-					<input type="text" class="form-control" placeholder="Pesquise nome da M„e ou BebÍ..." name="texto" id="basic-url" aria-describedby="basic-addon3">
+					<input type="text" class="form-control" placeholder="Pesquise nome da M√£e ou Beb√™..." name="texto" id="basic-url" aria-describedby="basic-addon3">
 				</form>
 			
 
@@ -74,7 +74,7 @@ ul.bok li.active a{color:#FFF}
 								}
 								
 								
-								if($row['sexo']=='M'){
+								if($row['sexo']=='m'){
 									$sty = '#3B61B9;';
 									$css = 'botaoMenino';
 
@@ -98,7 +98,7 @@ ul.bok li.active a{color:#FFF}
 									if(!empty($row['nome_pai'])){
 									
 									
-									echo '<div class="pai_noti">Ol· meu nome È <strong style="color:'.$sty.'">'.$row['nome_crianca'].'</strong>. Meus pais s„o <strong>'.$row['nome_mae'].'</strong> e <strong>'.$row['nome_pai'].'</strong>, nasci no dia '.data_mysql_para_user($row['data_nasc']); 
+									echo '<div class="pai_noti">Ol√° meu nome √© <strong style="color:'.$sty.'">'.$row['nome_crianca'].'</strong>. Meus pais s√£o <strong>'.$row['nome_mae'].'</strong> e <strong>'.$row['nome_pai'].'</strong>, nasci no dia '.data_mysql_para_user($row['data_nasc']); 
 									
 										if(!empty($row['hora'])){
 											echo ' as '.$row['hora'];
@@ -115,7 +115,7 @@ ul.bok li.active a{color:#FFF}
 									
 									} else {
 										
-										echo '<div class="pai_noti">Ol· meu nome È <strong style="color:'.$sty.'">'.$row['nome_crianca'].'</strong>. Minha m„e È <strong>'.$row['nome_mae'].'</strong>, nasci no dia '.data_mysql_para_user($row['data_nasc']);
+										echo '<div class="pai_noti">Ol√° meu nome √© <strong style="color:'.$sty.'">'.$row['nome_crianca'].'</strong>. Minha m√£e √© <strong>'.$row['nome_mae'].'</strong>, nasci no dia '.data_mysql_para_user($row['data_nasc']);
 										
 										if(!empty($row['hora'])){
 											echo ' as '.$row['hora'];

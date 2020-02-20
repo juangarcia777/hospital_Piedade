@@ -4,10 +4,10 @@
 <div class="content_meio">
     	
     <div class="tp_interna">
-    	CONHE«A NOSSOS REC…M NASCIDOS
+    	CONHE√áA NOSSOS REC√âM NASCIDOS
     </div>	   
     
-    <div class="titulos2">BER«¡RIO</div>
+    <div class="titulos2">BER√á√ÅRIO</div>
 
     <div class="ajusta_line2"><div class="line2"></div></div>
 
@@ -51,7 +51,7 @@
 								}
 								
 								
-								if($row['sexo']=='M'){
+								if($row['sexo']=='m'){
 									$sty = '#3B61B9;';
 									$css = 'botaoMenino';
 
@@ -81,9 +81,9 @@
 									
 									?> 
 									<div class="pai_noti" style="background-color: #f4f4f4">
-										<label>BEB </label>
+										<label>BEB√ä</label>
 											<strong style="color:<?php echo $sty; ?>"><?php echo $row['nome_crianca']; ?></strong>
-											<label><p>M√E</p></label>
+											<label><p>M√ÉE</p></label>
 											<strong><?php echo $row['nome_mae'];?></strong>
 											<label><p>PAI</p></label>
 											<strong><?php echo $row['nome_pai'];?></strong>
@@ -96,17 +96,18 @@
 									
 									?>
 									
-									<a href="">DEIXAR MENSAGEM</a>
+									<a id="msg" >DEIXAR MENSAGEM</a>  <a id="imprimir" style="background-color: yellowgreen" onClick="window.print()">IMPRIMIR</a>
+
 
     								</div>
 
 									<?php
 									} else { ?>
 										
-										<div class="pai_noti" style="background-color: #f4f4f4"> 
-											<label>BEB </label>
+										<div class="pai_noti" id="semPai" style="background-color: #f4f4f4"> 
+											<label>BEB√ä</label>
 											<strong style="color:<?php echo $sty; ?>"><?php echo $row['nome_crianca']; ?></strong>
-											<label>M√E</label>
+											<label>M√ÉE</label>
 											<strong><?php echo $row['nome_mae'];?></strong>
 											<label>NASCIMENTO</label>
 											 <strong><?php echo data_mysql_para_user($row['data_nasc']); ?></strong>
@@ -116,8 +117,8 @@
 										} 
 										
 										?>
- ?>
-									<a href="">DEIXAR MENSAGEM</a>
+ 
+									<a id="msg" >DEIXAR MENSAGEM</a>  <a id="imprimir" style="background-color: yellowgreen" onClick="window.print()">IMPRIMIR</a>
 
 									</div>';	
 
@@ -127,16 +128,70 @@
 </div>
 </div>
 </div>
-</div>
 
+		<?php 
+
+		if(!empty($_POST['nome'])) {
+			$data= date('d/m/y');
+			$nome= $_POST['nome'];
+			$msg= $_POST['mensagem'];
+
+			$insert = $db->select("INSERT INTO recados (id_bercario,mensagem,ativo,nome,data) VALUES ('$id','$msg','1','$nome','$data')");
+		}
+
+		 ?>
+
+		<div class="mensagem">
+		<form method="POST" style="background-color:<?php echo $sty; ?>">
+			<label>Nome</label><br>
+			<input type="text" name="nome" required/><br><br>
+			<label>Mensagem</label><br>
+			<textarea type="text" name="mensagem"></textarea><br><br>
+			<input type="submit" value="Enviar"/>			
+		</form>
+	</div><br><br>
+
+	<br>
+
+	<?php
+		$sel = $db->select("SELECT * FROM recados WHERE id_bercario= '$id' ORDER BY id DESC LIMIT 20");
+		if($db->rows($sel)){
+			while($yy = $db->expand($sel)){
+								
+				?>
+	<div class="recados">
+		<div class="col">
+			<strong><?php echo $yy['nome'] ?></strong>
+			<p><?php echo $yy['mensagem'] ?></p><br>
+
+			<strong><?php echo $yy['data'] ?></strong>
+
+		</div>
+	</div>
+
+	<?php }} ?>
+
+</div>
 
 
         
  <br/><br/>   
     
+<?php include("includes/rodape.php"); ?>
     
 
-
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
  
+ <script type="text/javascript">
+ 	$('#msg').on('click', function(){
 
-  <!-- K;6%domp1NwC -->
+		var msg  = $('.mensagem').is(':visible');
+
+ 		if (msg){
+ 			$('.mensagem').css("display","none");
+ 		
+ 		} else { 
+ 			$('.mensagem').css("display","block");
+ 		}
+ 	});
+ </script>

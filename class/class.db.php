@@ -2,9 +2,9 @@
 $root_doc = 'https://hpiedade.com.br/';
 
 define('DB_HOST', 'localhost' ); // set database host
-define('DB_USER', 'hp_novo' ); // set database user
-define('DB_PASS', 'a1b2c3d4' ); // set database password
-define('DB_NAME', 'hp_novo' ); // set database name
+define('DB_USER', 'root' ); // set database user
+define('DB_PASS', 'root' ); // set database password
+define('DB_NAME', 'h_piedade' ); // set database name
 	
 
 class DB{

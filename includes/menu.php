@@ -10,13 +10,13 @@
         <div class="sub01" style="height: auto;">
             <a href="<?php echo $root_doc; ?>diretoria" class="submenu">DIRETORIA</a>
             <a href="<?php echo $root_doc; ?>estrutura-hospital" class="submenu">ESTRUTURA</a>
-            <a href="<?php echo $root_doc; ?>hospital" class="submenu">HIST”RIA</a>
-            <a href="<?php echo $root_doc; ?>missao-visao-valores" class="submenu">MISS√O, VIS√O E VALORES</a>
+            <a href="<?php echo $root_doc; ?>hospital" class="submenu">HIST√ìRIA</a>
+            <a href="<?php echo $root_doc; ?>missao-visao-valores" class="submenu">MISS√ÉO, VIS√ÉO E VALORES</a>
 
-             <div id="menu99" class="submenu">TRANSPAR NCIA<i class="fa fa-angle-right fa-fw poy" aria-hidden="true"></i>
+             <div id="menu99" class="submenu">TRANSPARENCIA<i class="fa fa-angle-right fa-fw poy" aria-hidden="true"></i>
              
                  <div class="subsub">
-                    <a href="<?php echo $root_doc; ?>documentos-probatorios" class="submenu2">DOCUMENTOS PROBAT”RIOS</a>    
+                    <a href="<?php echo $root_doc; ?>documentos-probatorios" class="submenu2">DOCUMENTOS PROBAT?IOS</a>    
                     <a href="<?php echo $root_doc; ?>fomento-2018" class="submenu2">TERMO DE FOMENTO 2018</a>   
                     <a href="<?php echo $root_doc; ?>fomento-2019" class="submenu2">TERMO DE FOMENTO 2019</a>       
                     <a href="<?php echo $root_doc; ?>recursos-humanos" class="submenu2" style="background-color: #23D5AE;" >RECURSOS HUMANOS</a>        
@@ -28,7 +28,7 @@
     </li>
     
     <li id="menu02">
-        SERVI«OS&nbsp;<i class="fa fa-angle-down fa-fw" aria-hidden="true"></i>
+        SERVI√áOS&nbsp;<i class="fa fa-angle-down fa-fw" aria-hidden="true"></i>
         <div class="sub02">
             <?php
                 $db = new DB();
@@ -64,22 +64,22 @@
     <li id="menu03">
         MATERNIDADE&nbsp;<i class="fa fa-angle-down fa-fw" aria-hidden="true"></i>
         <div class="sub03">
-            <a href="<?php echo $root_doc; ?>bercario" class="submenu">BER«ARIO VIRTUAL</a>
+            <a href="<?php echo $root_doc; ?>bercario" class="submenu">BER√áARIO VIRTUAL</a>
             <a href="<?php echo $root_doc; ?>estrutura" class="submenu">ESTRUTURA</a>
             
-            <a href="<?php echo $root_doc; ?>horarios" class="submenu">HOR¡RIO DE VISITAS</a>
+            <a href="<?php echo $root_doc; ?>horarios" class="submenu">HOR√ÅRIO DE VISITAS</a>
         </div>
     </li>
     
     
     <li id="menu04">
-        CORPO CLÕNICO&nbsp;<i class="fa fa-angle-down fa-fw" aria-hidden="true"></i>
+        CORPO CLINICO&nbsp;<i class="fa fa-angle-down fa-fw" aria-hidden="true"></i>
         <div class="sub04">
             <a href="<?php echo $root_doc; ?>especialidades" class="submenu">ESPECIALIDADES</a>
         </div>
     </li>
     
-    <a href="<?php echo $root_doc; ?>noticias" style="display:none"><li>NOTÕCIAS</li></a>
+    <a href="<?php echo $root_doc; ?>noticias" style="display:none"><li>NOTICIAS</li></a>
     
     <li id="menu05">
         PROJETOS&nbsp;<i class="fa fa-angle-down fa-fw" aria-hidden="true"></i>
@@ -88,7 +88,7 @@
         </div>
     </li>
     
-    <a href="<?php echo $root_doc; ?>doacoes"><li>DOA«’ES</li></a>
+    <a href="<?php echo $root_doc; ?>doacoes"><li>DOA√á√ïES</li></a>
     
     <a href="<?php echo $root_doc; ?>ouvidoria" style="display:none"><li>OUVIDORA</li></a>
     
